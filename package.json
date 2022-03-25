@@ -3,7 +3,9 @@
   "scripts": {
     "watch": "NODE_ENV=development webpack --watch --config ./webpack/webpack.config.js",
     "production": "NODE_ENV=production webpack --config ./webpack/webpack.config.js --display-entrypoints",
-    "rmdist": "rimraf dist"
+    "rmdist": "rimraf dist",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
@@ -55,6 +57,8 @@
     "axios": "^0.19.2",
     "stylelint-order": "^4.0.0",
     "tailwindcss": "^1.1.4",
-    "vue": "^2.6"
-  }
+    "vue": "^2.6",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
