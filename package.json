@@ -53,8 +53,8 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
-    "stylelint-order": "^4.0.0",
-    "tailwindcss": "^1.1.4",
+    "stylelint-order": "^5.0.0",
+    "tailwindcss": "^2.0.0",
     "vue": "^2.6"
   }
 }
